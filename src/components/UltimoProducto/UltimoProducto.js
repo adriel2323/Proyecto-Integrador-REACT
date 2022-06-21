@@ -1,5 +1,5 @@
 import React from "react";
-import Curso from "../detalle/Curso";
+import DetallePequenio from "../DetallePequeño/DetallePequenio";
 import './UltimoProducto.css'
 
 function UltimoProducto (){
@@ -8,7 +8,7 @@ function UltimoProducto (){
             <div className="Ultimo-boxTitulo">
                 <h1 className="Ultimo-titulo">Ultimo Curso añadido</h1>
             </div>
-            <Curso/>
+            <DetallePequenio/>
         </div>
     );
 }

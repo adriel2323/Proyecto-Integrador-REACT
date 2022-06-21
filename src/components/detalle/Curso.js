@@ -1,5 +1,9 @@
 import React from "react";
 import PrecioCompra from "../DetallePequeño/PrecioCompra/PrecioCompra";
+import ImagenCurso from './imagenes/scrum.jpg'
+import cursos  from './cursosDataBase.json'
+let descripcion = cursos[0].descripcion_corta
+let precio = cursos[0].precio
 
 function Curso (){
     return (
@@ -12,12 +16,14 @@ function Curso (){
                     titulo del curso
                 </h1>
                 <div>
-                    <img></img>
+                    <div>
+                    <img src={ ImagenCurso }></img>
+                    </div>
                     <h3>
-                        Descripcion del curso
+                        Descripcion
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    {descripcion}
                     </p>
                     <PrecioCompra/>
                 </div>

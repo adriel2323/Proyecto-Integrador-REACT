@@ -1,0 +1,18 @@
+.DP-imagen {
+    width: 100%;
+}
+
+.DP-foto {
+    width: 90%;
+    overflow: hidden;
+}
+
+.DP-contenedor {
+    display: flex;
+}
+.DP-contenedor-info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
