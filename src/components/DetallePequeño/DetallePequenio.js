@@ -16,11 +16,11 @@ function DetallePequenio (){
                         <img className="DP-imagen" src={ ImagenCurso }></img>
                     </div>
                     <div className="DP-contenedor-info">
-                        <h1>
+                        <h1 className="DP-titulo">
                             titulo del curso
                         </h1>
                         <h3>
-                            Descripcion
+                            <b>Descripcion</b>
                         </h3>
                         <p>
                             {descripcion}
