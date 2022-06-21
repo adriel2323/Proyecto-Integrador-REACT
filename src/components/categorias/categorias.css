@@ -1,0 +1,14 @@
+.categoria_barra {
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: var(--amarillo);
+    padding: 5px;
+    box-shadow: -2px 13px 29px rgba(0, 0, 0, 0.25);
+}
+.categoria_barra_individual {
+    padding: 5px;
+    border-right: 2px solid black;
+    
+}
+

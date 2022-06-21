@@ -1,0 +1,13 @@
+.ContenedorContadores {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main-contenedores {
+    margin: 10px 20px;
+}
+
+.ContenedorContadores-cursos .ContenedorContadores-categorias {
+    display: flex;
+    flex-direction: column;
+}
