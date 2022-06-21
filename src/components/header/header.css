@@ -110,6 +110,7 @@ header {
     margin: 0 10px;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    display: inline-flex;
 }
 
 .user-nav {

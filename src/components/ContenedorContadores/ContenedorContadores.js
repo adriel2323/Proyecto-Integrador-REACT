@@ -9,15 +9,19 @@ function ContenedorContadores (){
     return (
         <div className="ContenedorContadores">
             <div className="ContenedorContadores-categorias">
-                <h1>
-                    categorias
-                </h1>
+                <div className="ContenedorContenedores-boxTitulos">
+                    <h1>
+                        Categorias
+                    </h1>
+                </div>
                 <Categorias/>
             </div>
             <div className="ContenedorContadores-cursos">
-                <h1>
-                    Cursos
-                </h1>
+                <div className="ContenedorContenedores-boxTitulos">
+                    <h1>
+                        Cursos
+                    </h1>
+                </div>
                 <TotalProductos/>
             </div>
             

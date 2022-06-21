@@ -1,10 +1,13 @@
 import React from "react";
 import Curso from "../detalle/Curso";
+import './UltimoProducto.css'
 
 function UltimoProducto (){
     return (
-        <div>
-            <h1>Ultimo Curso añadido</h1>
+        <div className="Ultimo-contenedor">
+            <div className="Ultimo-boxTitulo">
+                <h1 className="Ultimo-titulo">Ultimo Curso añadido</h1>
+            </div>
             <Curso/>
         </div>
     );

@@ -1,0 +1,14 @@
+.Ultimo-contenedor {
+    width: 70%;
+}
+
+.Ultimo-titulo {
+
+    font-size: 50px;
+
+}
+
+.Ultimo-boxTitulo {
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
