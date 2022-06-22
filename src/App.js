@@ -3,6 +3,7 @@ import Footer from './components/footer/Footer';
 import UserContainer from './components/UserContainer/UserContainer';
 import GeneralProductos from './components/GeneralProductos/GeneralProductos';
 import './App.css'
+// import {  Route } from 'react-router-dom';
 
 
 
@@ -13,7 +14,7 @@ function App() {
         <Header/>
       </header>
       <main className='main-contenedores'>
-        <GeneralProductos/>
+        <GeneralProductos /> 
         <UserContainer/>
       </main>
       <Footer/>
