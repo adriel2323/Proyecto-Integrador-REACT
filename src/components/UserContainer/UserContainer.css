@@ -1,0 +1,30 @@
+.UserContainer {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.UserContainer h1 {
+    font-size: 50px;
+}
+.UserBox-Titulos {
+    margin-bottom: 30px;
+}
+
+.userTitulo {
+    border-bottom: 1px solid black;
+}
+
+.UserContainer-users .UserContainer-contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.UserContainer-contenido {
+    width: 70%;
+}
+
+.UserContainer-users {
+    width: 25%;
+}

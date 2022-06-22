@@ -3,6 +3,7 @@ import Footer from './components/footer/Footer';
 import UltimoProducto from './components/UltimoProducto/UltimoProducto';
 import ContenedorContadores from './components/ContenedorContadores/ContenedorContadores';
 import MiniDetalleListado from './components/MiniDetalleListado/MiniDetalleListado';
+import UserContainer from './components/UserContainer/UserContainer';
 import './App.css'
 
 
@@ -23,6 +24,7 @@ function App() {
               <MiniDetalleListado/>
             </div>
         </div>
+        <UserContainer/>
       </main>
       <Footer/>
     </div>
