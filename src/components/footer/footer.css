@@ -1,17 +1,20 @@
-.footerGeneral {
-    position: botton;
+.FT-logo {
+    padding-left: 30px;
 }
 
 .FT-contenedor {
     display: flex;
     justify-content: space-between;
-    background-color: var(--gris-claro);
+    background-color: var(--gris-oscuro);
+    padding: 20px;
+    margin-top: 15px;
 }
 
 .FT-listaLogos {
     display: flex;
     flex-direction: row;
     list-style: none;
+    padding-right: 30px;
 }
 
 .FT-logos-ind {

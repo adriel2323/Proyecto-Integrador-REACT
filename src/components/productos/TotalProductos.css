@@ -18,7 +18,10 @@
 .TP-Cont_numero {
     border-left: 2px solid var(--blanco);
     padding: 10px;
+    align-items: center;
+    padding-left: 20px;
 }
 .TP-Numero {
     font-size: 50px;
+    padding: 20px;
 }

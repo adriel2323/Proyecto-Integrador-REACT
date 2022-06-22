@@ -1,9 +1,10 @@
-
 import Header from './components/header/Header';
-import ListaProductos from './components/listado/ListaProductos';
 import Footer from './components/footer/Footer';
 import UltimoProducto from './components/UltimoProducto/UltimoProducto';
 import ContenedorContadores from './components/ContenedorContadores/ContenedorContadores';
+import MiniDetalleListado from './components/MiniDetalleListado/MiniDetalleListado';
+import './App.css'
+
 
 
 function App() {
@@ -14,8 +15,13 @@ function App() {
       </header>
       <main className='main-contenedores'>
         <ContenedorContadores/>
-        <div>
-          <UltimoProducto/>
+        <div className='App-contenedor-lista-ultimo'>
+            <div className='App-contenedor-ultimo'>
+              <UltimoProducto/>
+            </div>
+            <div className='App-contenedor-lista'>
+              <MiniDetalleListado/>
+            </div>
         </div>
       </main>
       <Footer/>

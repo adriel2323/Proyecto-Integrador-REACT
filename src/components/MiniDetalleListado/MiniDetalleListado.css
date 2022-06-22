@@ -1,0 +1,37 @@
+
+.MDL-MaxBox {
+    height: 550px;
+    overflow: scroll;
+}
+
+.MDL-contenedor {
+    display: flex;
+    padding: 10Px 0;
+    border-bottom: 0.5px solid var(--gris-claro)
+}
+
+.MDL-imagen {
+    width: 100%;
+}
+
+.MDL-foto {
+    width: 40%;
+    overflow: hidden;
+}
+
+.MDL-contenedor-info {
+    width: 60%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MDL-titulo {
+    font-size: 15px;
+}
+.MDL-parrafo {
+    height: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

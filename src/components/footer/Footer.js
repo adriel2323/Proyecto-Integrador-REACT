@@ -9,7 +9,7 @@ import './footer.css'
 function Footer (){
     return (
         <div className="FT-contenedor">
-            <div>
+            <div className="FT-logo">
                 <img src={Logo}></img>
             </div>
             <ul className="FT-listaLogos">
