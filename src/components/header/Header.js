@@ -15,10 +15,14 @@ function Header (){
                 <div className="contein-user-nav">
                     <ul className="user-nav">
                         <li className="header-bottom">
-                            <img src={ iconoListar }></img>
+                            <a href="productos">
+                                <img src={ iconoListar }></img>
+                            </a>
                         </li>
                         <li className="header-bottom">
-                            <img src={ iconoUsuario }></img>
+                            <a href="/usuarios">
+                                <img src={ iconoUsuario }></img>
+                            </a>
                         </li>
                     </ul>
                 </div>
