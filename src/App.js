@@ -1,8 +1,11 @@
+import React from 'react';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import UserContainer from './components/UserContainer/UserContainer';
 import GeneralProductos from './components/GeneralProductos/GeneralProductos';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css'
+import { Component } from 'react';
 // import {  Route } from 'react-router-dom';
 
 
@@ -10,16 +13,16 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <header>
-        <Header/>
-      </header>
+      <Header />
       <main className='main-contenedores'>
-        <GeneralProductos /> 
-        <UserContainer/>
+        <Routes Component={GeneralProductos} />
+        <UserContainer />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
+

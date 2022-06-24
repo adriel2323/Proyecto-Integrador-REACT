@@ -1,5 +1,6 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './categorias.css'
+
 
 let categorias = [
     {
@@ -25,6 +26,15 @@ let categorias = [
 ]
 
 function Categorias (){
+    // const [categorias,setCategorias]= useState([])
+
+    // fetch('http://localhost:3001/api/categorias')
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setCategorias(data)
+    //   })
+
+
     return (
         <div>
             <ul className="categoria_barra">
