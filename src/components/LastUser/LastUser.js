@@ -1,6 +1,8 @@
-import React from "react";
-import fotoUser from './images/user-1655569065023.jpg'
+import React, {useState, useEffect} from "react";
+import fotoUser from './images/user-1655569065023.jpg';
 import './lastUser.css';
+import axios from 'axios';
+
 let usuarios = [
     {
         "nombre": "Adriel",
@@ -84,6 +86,17 @@ let usuarios = [
 let ultimoUser = usuarios[usuarios.length -1]
 
 function LastUser (){
+    // const [users, setUsers] = useState([])
+
+    // useEffect(() => {
+    //     axios.get('http://localhost:3001/api/users')
+    //     .then((data) => {
+    //         setUsers(data.data.users)
+    //         console.log(users)
+    //     })
+    // }, [])
+
+
     return (
         <React.Fragment>
             <div className="lastUser-container">

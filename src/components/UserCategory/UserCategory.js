@@ -1,40 +1,47 @@
-import React from "react";
-import './UserCategory.css'
+import React, {useState, useEffect} from "react";
+import './UserCategory.css';
+import axios from "axios";
 
-let userCategorias = [
-    {
-        nombre: 'Alumno',
-        cantidad: 6
-    },
-    {
-        nombre: 'Profesor',
-        cantidad: 4
-    },
-    {
-        nombre: 'Editor',
-        cantidad: 1
-    },
-    {
-        nombre: 'Administrador',
-        cantidad: 2
-    }
-]
+// let userCategorias = [
+//     {
+//         nombre: 'Alumno',
+//         cantidad: 6
+//     },
+//     {
+//         nombre: 'Profesor',
+//         cantidad: 4
+//     },
+//     {
+//         nombre: 'Editor',
+//         cantidad: 1
+//     },
+//     {
+//         nombre: 'Administrador',
+//         cantidad: 2
+//     }
+// ]
 
 function UserCategory (){
+    const [userCategorias, setCategory] = useState([])
+
+    useEffect(()=> {
+        axios.get('http://localhost:3001/api/users/categorias')
+        .then((data) => {
+            setCategory(data.data.categorias)
+        })
+    }, [])
+
     return (
         <React.Fragment>
             <div className="userCategory-container">
                 <ul className="categoria_barra">
                     {
-                        userCategorias.map((category, i) => {
+                        userCategorias.length && userCategorias.map((category, i) => {
                             return(
-                                <li className="categoria_barra_individual" key={userCategorias + i}>
+                                <li className="userCategory_barra_individual" key={userCategorias + i}>
                                     <div>
                                         {userCategorias[i].nombre}
                                     </div>
-                                    <h3 className="categoria_barra_individual_numero">
-                                        ({userCategorias[i].cantidad})
-                                    </h3>
                                 </li>
                             )
                         })
