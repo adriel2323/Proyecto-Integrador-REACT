@@ -20,7 +20,7 @@ function UserListado() {
                         return(
                             <li className="userList-container" key={user + i}>
                                 <div className="userList-foto">
-                                    <img className="userList-imagen" src={ users[i].detail.image } alt="foto de perfil"></img>console.log(users[i].detail.image);
+                                    <img className="userList-imagen" src={ users[i].detail.image } alt="foto de perfil"></img>
                                 </div>
                                 <div className="userList-info">
                                     <h2 className="userList-name">
