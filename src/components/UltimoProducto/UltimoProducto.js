@@ -2,9 +2,7 @@ import React from "react";
 import DetallePequenio from "../DetallePequeño/DetallePequenio";
 import './UltimoProducto.css'
 
-
 function UltimoProducto (){
-
     return (
         <div className="Ultimo-contenedor">
             <div className="Ultimo-boxTitulo">
