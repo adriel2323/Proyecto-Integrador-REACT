@@ -1,112 +1,29 @@
 import React, {useState, useEffect} from "react";
-import fotoUser from './images/user-1655569065023.jpg';
 import './lastUser.css';
 import axios from 'axios';
 
-let usuarios = [
-    {
-        "nombre": "Adriel",
-        "apellidos": "Colombo",
-        "email": "adrielcolombo23@gmail.com",
-        "descripcion": null
-    },
-    {
-        "nombre": "Arvin",
-        "apellidos": "Bizley",
-        "email": "abizley1@tamu.edu",
-        "descripcion": null
-    },
-    {
-        "nombre": "Riki",
-        "apellidos": "Dow",
-        "email": "rdow2@deviantart.com",
-        "descripcion": null
-    },
-    {
-        "nombre": "Alli",
-        "apellidos": "Howey",
-        "email": "ahowey3@issuu.com",
-        "descripcion": null
-    },
-    {
-        "nombre": "Maribel",
-        "apellidos": "Baggally",
-        "email": "mbaggally4@nationalgeographic.com",
-        "descripcion": null
-    },
-    {
-        "nombre": "Morna",
-        "apellidos": "Gumley",
-        "email": "mgumley5@feedburner.com",
-        "descripcion": null
-    },
-    {
-        "nombre": "Cyndie",
-        "apellidos": "Synnott",
-        "email": "csynnott6@cafepress.com",
-        "descripcion": null
-    },
-    {
-        "nombre": "Eada",
-        "apellidos": "Stiegers",
-        "email": "estiegers7@cnbc.com",
-        "descripcion": null
-    },
-    {
-        "nombre": "Lucais",
-        "apellidos": "Wittering",
-        "email": "lwittering8@fda.gov",
-        "descripcion": null
-    },
-    {
-        "nombre": "Arlette",
-        "apellidos": "Cantillon",
-        "email": "acantillon9@digg.com",
-        "descripcion": null
-    },
-    {
-        "nombre": "Norris",
-        "apellidos": "Aldin",
-        "email": "naldin0@icio.us",
-        "descripcion": null
-    },
-    {
-        "nombre": "Paulina",
-        "apellidos": "Monjes",
-        "email": "paulimonjes@gmail.com",
-        "descripcion": "Me llamo paulina y me gustan los sanguchitos de miga"
-    },
-    {
-        "nombre": "Ramiro",
-        "apellidos": "Monjes",
-        "email": "rmonjes@frsn.utn.edu.ar",
-        "descripcion": "Hola"
-    }
-]
-let ultimoUser = usuarios[usuarios.length -1]
-
 function LastUser (){
-    // const [users, setUsers] = useState([])
+    const [lastUsers, setLastUsers] = useState([])
 
-    // useEffect(() => {
-    //     axios.get('http://localhost:3001/api/users')
-    //     .then((data) => {
-    //         setUsers(data.data.users)
-    //         console.log(users)
-    //     })
-    // }, [])
-
+    useEffect(()=> {
+        axios.get('http://localhost:3001/api/users')
+        .then((data) => {
+            setLastUsers(data.data.users[data.data.users.length -1])
+            
+            
+        })
+    }, [])
 
     return (
         <React.Fragment>
             <div className="lastUser-container">
                 <div className="UserFoto">
-                    <img className="LastUser-imagen" src={ fotoUser } alt=""></img>
+                    <img className="LastUser-imagen" src={ "./imagenes/users/" + lastUsers.imagen } alt=""></img>
                 </div>
                 <div className="lastUserInfo-container">
-                    <h2 className="userName">{ ultimoUser.nombre +" "+ ultimoUser.apellidos }</h2>
-                    <h3 className="lastUserMail">{ ultimoUser.email }</h3>
-                    <h4 className="lastUserInfo">{ ultimoUser.descripcion }</h4>
+                    <h2 className="userName">{ lastUsers.nombre +" "+ lastUsers.apellido }</h2>
+                    <h3 className="lastUserMail">{lastUsers.email}</h3>
+                    <h4 className="lastUserInfo">{ lastUsers.descripcion }</h4>
                 </div>
             </div>
         </React.Fragment>

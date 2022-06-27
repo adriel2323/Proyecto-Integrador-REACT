@@ -17,11 +17,12 @@
 
 .userList-imagen {
     width: 100%;
+    min-height: 80px;
     border-radius: 50%;
     max-width: 80px;
     display: flex;
     justify-content: center;
-    min-height: 6rem;
+    object-fit: cover;
 }
 
 .userList-info {

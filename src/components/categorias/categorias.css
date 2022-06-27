@@ -11,11 +11,12 @@
 .categoria_barra_individual {
     display: inline-flex;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
     border-right: 1px solid black;
     flex-grow: 1;
     font-size: 25px;
     text-align: center;
+    padding-left: 15px;
 }
 .categoria_barra_individual_numero{
     color: var(--gris-claro);
