@@ -19,7 +19,7 @@ function MiniDetalleListado (){
                     return(
                       <div className="MDL-contenedor">
                                 <div className="MDL-foto">
-                                    <img className="MDL-imagen" src={ curso.imagen_principal } alt="imagen curso"></img>
+                                    <img className="MDL-imagen" src={ "." + curso.imagen } alt="imagen curso"></img>
                                  </div>
                                  <div className="MDL-contenedor-info">
                                      <h1 className="MDL-titulo">

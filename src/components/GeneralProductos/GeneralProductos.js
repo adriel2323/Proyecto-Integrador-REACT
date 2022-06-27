@@ -13,7 +13,7 @@ function GeneralProductos (){
                   <UltimoProducto/>
                 </div>
                 <div className='App-contenedor-lista'>
-                     <MiniDetalleListado/>
+                    <MiniDetalleListado/>
                 </div>
             </div>
         </div>
