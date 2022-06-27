@@ -15,9 +15,9 @@ function MiniDetalleListado (){
     return (
             <div className="MDL-MaxBox">
                 {
-                  cursos.length && cursos.map((curso)=>{
+                  cursos.length && cursos.map((curso,i)=>{
                     return(
-                      <div className="MDL-contenedor">
+                      <div className="MDL-contenedor" key={curso + i} >
                                 <div className="MDL-foto">
                                     <img className="MDL-imagen" src={ "." + curso.imagen } alt="imagen curso"></img>
                                  </div>

@@ -15,9 +15,9 @@ function Categorias (){
         <div>
             <ul className="categoria_barra">
                 {
-                    categorias.length && categorias.map((categoria) => {
+                    categorias.length && categorias.map((categoria, i) => {
                         return (
-                            <li className="categoria_barra_individual" >
+                            <li className="categoria_barra_individual"  key={categoria + i}>
                                 <div >
                                     {categoria.nombre}
                                 </div>
